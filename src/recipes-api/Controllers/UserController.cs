@@ -63,6 +63,17 @@ public class UserController : ControllerBase
     [HttpDelete("{email}")]
     public IActionResult Delete(string email)
     {
-        throw new NotImplementedException();
+        if (email == null) return BadRequest();
+        var recipeExists = this._service.GetUser(email);
+        if (recipeExists == null) return NotFound();
+        try 
+        {
+            this._service.DeleteUser(email);
+            return NoContent();
+        }
+        catch
+        {
+            return BadRequest();
+        }
     } 
 }
