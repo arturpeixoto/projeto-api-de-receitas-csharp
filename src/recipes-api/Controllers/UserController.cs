@@ -33,7 +33,12 @@ public class UserController : ControllerBase
     [HttpPost]
     public IActionResult Create([FromBody]User user)
     {
-        throw new NotImplementedException();
+        this._service.AddUser(user);
+        return CreatedAtAction(
+            nameof(Get),
+            new { email = user.Email },
+            user
+        );
     }
 
     // "8 - Sua aplicação deve ter o endpoint PUT /user
