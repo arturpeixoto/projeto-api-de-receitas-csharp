@@ -21,7 +21,7 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-api-de-receitas-csharp.git
+git clone https://github.com/arturpeixoto/projeto-api-de-receitas-csharp.git
 ```
 
 ### 2. Acesse o diretório do projeto
