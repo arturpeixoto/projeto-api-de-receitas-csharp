@@ -43,7 +43,7 @@ dotnet restore
 Para rodar a aplicação, utilize o comando:
 
 ```bash
-dotnet run --project src/projeto-api-de-receitas-csharp
+dotnet run --project src/recipes-api
 ```
 
 Ao executar o projeto, a API será documentada e acessível via **Swagger**. Após a execução, abra o navegador e acesse a URL exibida nos logs para visualizar a documentação da API e testar os endpoints.
